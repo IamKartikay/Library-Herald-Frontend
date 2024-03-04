@@ -1,0 +1,298 @@
+body{
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.content{
+  min-height: 100vh;
+  max-height: auto;
+  overflow-x: hidden;
+  padding-top: 90px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: grey;
+  width: 75%;
+}
+
+.grid-item {
+  border: 1px solid black;
+}
+
+/* all journal article tiles */
+
+@media (max-width: 475px) {
+  .content .journal-tiles{
+    width: 100%;
+    padding: 0;
+  }
+} 
+
+@media (min-width: 476px) and (max-width: 640px) {
+  .content .journal-tiles{
+    width: 100%;
+    padding: 0;
+  }
+} 
+@media (min-width: 640px) and (max-width: 768px) {
+  .content .journal-tiles{
+    width: 100%;
+    padding: 0;
+  }
+} 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .content .journal-tiles{
+    width: 80%;
+    padding: 0;
+  }
+} 
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .content .journal-tiles{
+    width: 90%;
+    padding: 0;
+  }
+} 
+ 
+.journal-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 10px;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+
+
+/* article page */
+
+
+@media (max-width: 475px) {
+  .content .j_container{
+    margin-top: 10px;
+  }
+
+  .j_container .j_content{
+    padding: 0;
+    margin-top: 20px;
+    width: 90%;
+    border: none;
+  }
+
+  .j_container .j_content h1{
+    font-size: 20px;
+  }
+  .j_container .j_content p{
+    font-size: 15px;
+  }
+
+
+} 
+@media (min-width: 476px) and (max-width: 640px) {
+  .content .j_container{
+    margin-top: 10px;
+  }
+
+  .j_container .j_content{
+    padding: 0;
+    margin-top: 20px;
+    width: 90%;
+    border: none;
+  }
+
+  .j_container .j_content h1{
+    font-size: 20px;
+  }
+  .j_container .j_content p{
+    font-size: 15px;
+  }
+
+} 
+@media (min-width: 640px) and (max-width: 768px) {
+  .content .j_container{
+    margin-top: 10px;
+  }
+
+  .j_container .j_content{
+    padding: 50px 50px 50px 50px;
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  .j_container .j_content h1{
+    font-size: 25px;
+  }
+  .j_container .j_content p{
+    font-size: 17px;
+  }
+} 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .content .j_container{
+    margin-top: 10px;
+  }
+
+  .j_container .j_content{
+    padding: 50px 60px 50px 60px;
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  .j_container .j_content h1{
+    font-size: 25px;
+  }
+  .j_container .j_content p{
+    font-size: 18px;
+  }
+} 
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .content .j_container{
+    margin-top: 10px;
+  }
+
+  .j_container .j_content{
+    padding: 50px 70px 50px 70px;
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .j_container .j_content h1{
+    font-size: 25px;
+  }
+  .j_container .j_content p{
+    font-size: 18px;
+  }
+} 
+
+
+.j_container {
+  max-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  min-height: 100vh;
+}
+
+.j_content {
+  padding: 50px 90px 50px 90px;
+  border: 1px solid rgba(192,192,192,1);
+  width: 850px;
+  
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.3em; 
+  }
+
+  .section {
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 17px;
+    font-family:  sans-serif;
+    opacity: 0.9;
+  }
+
+  .socials{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+
+    .logos{
+      display: flex;
+      gap: 20px;
+      height: auto;
+      margin-bottom: 20px;
+      align-items: center;
+    }
+
+    .logos svg:hover, a:hover{
+      fill : #2243ba;
+      color : #2243ba;
+    
+    }
+
+  }
+
+}
+
+
+/* @media (max-width: 475px) {
+
+} 
+@media (min-width: 476px) and (max-width: 640px) {
+
+} 
+@media (min-width: 640px) and (max-width: 768px) {
+
+} 
+@media (min-width: 769px) and (max-width: 1024px) {
+
+} 
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}  */
+
+
+
+
+/* width: '610.5px' , height: '919px' */
+
+.custom-button {
+  min-width: 120px;
+  height: 40px; /* Set your desired fixed height */
+  font-size: 14px; /* Adjust font size as needed */
+  cursor: pointer;
+  border-radius: 4px; /* Optional: Add border-radius for rounded corners */
+  align-content: center;
+  p{
+    margin: auto;
+    font-weight: 500;
+  }
+}
+
+.custom-button:hover {
+  fill: #2243ba; /* Change background color on hover */
+  border: 2px solid rgb(56, 16, 166)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* share post  */
+.option{
+  position: absolute;
+  top: 0;
+  right: 5%;
+  top: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  width: 200px;
+  height: 52px;
+  z-index: 1;
+  background-color: #f0f0f0;
+}
+
+
+
+
+
