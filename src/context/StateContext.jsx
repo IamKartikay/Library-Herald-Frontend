@@ -76,7 +76,7 @@ export const StateContext = ({ children }) => {
 
   const incrementLikes = (id) => {
     try {
-      fetch(`${HOST_ADDRESS/incrementLikes}`, {
+      fetch(`${HOST_ADDRESS}/incrementLikes`, {
         method: "PUT",
         body: JSON.stringify({
           id: id,
@@ -92,7 +92,7 @@ export const StateContext = ({ children }) => {
 
   const decrementLikes = (id) => {
     try {
-      fetch(`${HOST_ADDRESS/decrementLikes}`, {
+      fetch(`${HOST_ADDRESS}/decrementLikes`, {
         method: "PUT",
         body: JSON.stringify({
           id: id,
@@ -107,7 +107,7 @@ export const StateContext = ({ children }) => {
   };
   const incrementViews = (id) => {
     try {
-      fetch(`${HOST_ADDRESS/incrementViews}`, {
+      fetch(`${HOST_ADDRESS}/incrementViews`, {
         method: "PUT",
         body: JSON.stringify({
           id: id,
