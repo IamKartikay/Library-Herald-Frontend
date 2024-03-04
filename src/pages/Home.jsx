@@ -10,7 +10,7 @@ import {
   associateEditors,
   advisoryBoard,
 } from "../data/homePage";
-import EditorLists from "../Components/editorLists";
+import EditorLists from "../Components/EditorLists";
 import ContactUsForm from '../Components/ContactUsForm';
 import { useNavigate } from "react-router-dom";
 import './Home.css';
