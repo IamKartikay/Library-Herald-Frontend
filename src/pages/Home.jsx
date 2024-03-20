@@ -43,11 +43,37 @@ const Home = () => {
 
   return (
     <div className="content">
+     {/* <div className="strip">
+     <div className="flex-container">
+        <div className="flex-item">
+          <img className="libh_img" src={book} alt="lib herald" />
+        </div>
+        <div className="flex-item">
+          <div className="flex-text-container">
+            <span className="title-txt">WELCOME TO LIBRARY HERALD</span>
+            <p className="s1-p">
+              Library Herald publishes peer-reviewed original contributions in
+              the field of Library and Information Science. It also incorporates
+              research reports and includes reviews of important Indian and
+              foreign publications. Special issues on various aspects of Library
+              and Information Science are also published from time to time. It
+              is published quarterly in March, June, September and December
+              every year.
+            </p>
+            <p id="ph">Current Issue</p>
+            <button class="bg-blue w-40 h-11 rounded-lg hover:bg-red" style={{color:'white'}}  onClick={()=>handleLatestJournalDetails()}>{latestJournalDetails ? `Vol ${latestJournalDetails.volume} No. ${latestJournalDetails.issue} ${latestJournalDetails._id}` : '....'}</button>
+          </div>
+        </div>
+      </div>
+     </div> */}
+
+
+
       <div className="hsection">
         <div className="s1">
           <img className="libh_img" src={book} alt="lib herald" />
           <div className="s1-txt">
-            <span className="title-txt">WELCOME TO LIBRARY HERALD</span>
+            <span className="title-txt" id="welcome">WELCOME TO LIBRARY HERALD</span>
             <p className="s1-p">
               Library Herald publishes peer-reviewed original contributions in
               the field of Library and Information Science. It also incorporates
@@ -99,6 +125,10 @@ const Home = () => {
           </span>
         </div>
       </div>
+
+
+
+
       <div className="hsection">
         <div className="s3">
           <HomeTabs

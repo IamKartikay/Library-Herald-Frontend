@@ -427,9 +427,7 @@
     .hsection .overlaping-div1 p{
       text-align: start;
     }
-    .s11 #overlaping-img{
-    }
-  
+
     /* contact-us */
      .contact-us .form{
       margin-top: 20px;
@@ -439,24 +437,159 @@
   } 
   
 @media (min-width: 1025px) and (max-width: 1280px) {
-        /* s2 */
-        .hsection .s2{
-          grid-template-rows: auto auto;
-          gap: 40px;
-          padding-left: 5px;
-          padding-right: 5px;
-        }
-      
-        .s2 .s2-txt{
-          width: 80%;
-          font-size: 18px;
-        }
-      
-  } 
   
-@media (max-width: 1536px) {
+  #root{
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .hsection{
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .hsection .s1 {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 80%;
+  }
+
+  .hsection .libh_img {
+    width: 100%;
+    height: 100%
+  }
+
+  .s1 .s1-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    
+  }
+
+  .hsection .title-txt{
+    font-size: 50px;
+    width: auto;
+  }
+  .s1 .s1-p{
+    min-height: 50%;
+    font-size: 130%;
+  }
+
+  /* s2 */
+  .hsection .s2{
+    grid-template-rows: auto auto;
+    gap: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .s2 .s2-txt{
+    width: 80%;
+    font-size: 18px;
+  }
+
+  /* s3 */
+  .hsection .s3{
+      width: 100%;
+      padding: 60px 20px 60px 20px;
+      grid-template-columns: repeat(3, 30%);
+  }
+
+  /* s4 */
+  .hsection .s4{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hsection .s4-heading{
+      align-items: center;
+  }
+
+  .s4 .s4-img{
+    width: 100%;
+    height: 150px;
+  }
+
+
+  /* s6 */
+  .hsection .s6, .hsection .s7, .hsection .s8, .hsection .s9{
+    padding: 60px 20px 60px 20px;
+  }
+
+  .s6 .editors-grid, .s7 .editors-grid, .s8 .editors-grid{
+    width: 90%;
+
+    align-items: center;
+    gap: 30px;
+  }
+
+  .s9 .s9-text{
+    font-size: 14px;
+  }
+
+  /* contact-us */
+   .contact-us .form{
+    margin-top: 20px;
+    width: 70%;
+  }
+      
+} 
+
   
-  } 
+@media (min-width: 1281px) {
+
+  #root{
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .hsection{
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .hsection .s1 {
+    display: flex;
+    gap: 15px;
+    width: 50%;
+    height: 600px;
+  }
+
+  .hsection .libh_img,.hsection .s1-txt{
+    flex:1;
+    width: 50%;
+  }
+
+  .hsection .libh_img {
+    height: 100%
+  }
+
+  .s1 .s1-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: auto;
+  }
+
+
+  .s1 .s1-p, #ph{
+    font-size: 16px;
+  }
+
+} 
+
+
+
+
+
+
+
+
+
+
 
 .buffer{
   width: 100%;
